@@ -15,7 +15,7 @@ public class TC1 extends Base
 	{
 		LoginPage Login = new LoginPage(driver, pr);
 		Login.Signin("jayautomation2@gmail.com", "Manu@5252");
-//		ScreenShotCapture.takeScreenShot(driver, "C:\\Users\\Jay\\Desktop\\ScreenShot\\HomePage.jpg");
+		ScreenShotCapture.takeScreenShot(driver, "C:\\Users\\Jay\\Desktop\\ScreenShot\\HomePage.jpg");
 		
 		HomePage homepage = new HomePage(driver, pr);
 		homepage.NavigateToTranding();
@@ -23,7 +23,7 @@ public class TC1 extends Base
 		
 		LogoutPage Logout = new LogoutPage(driver, pr);
 		Logout.SignOut();
-//		ScreenShotCapture.takeScreenShot(driver, "C:\\Users\\Jay\\Desktop\\ScreenShot\\Signout.jpg");
+		ScreenShotCapture.takeScreenShot(driver, "C:\\Users\\Jay\\Desktop\\ScreenShot\\Signout.jpg");
 
 	}
 

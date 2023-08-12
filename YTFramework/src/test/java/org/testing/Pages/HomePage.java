@@ -15,20 +15,23 @@ public class HomePage
 		this.driver = driver;
 		this.pr = pr;
 	}
-	public void NavigateToTranding()
+	public void NavigateToTranding() throws InterruptedException
 	{
 		WebElement trending = driver.findElement(By.xpath(pr.getProperty("Trending")));
 		trending.click();
+		Thread.sleep(3000);
 	}
-	public void NavigateToHistory()
+	public void NavigateToHistory() throws InterruptedException
 	{
 		WebElement History = driver.findElement(By.xpath(pr.getProperty("History")));
 		History.click();
+		Thread.sleep(3000);
 	}
-	public void NavigateToSubsription()
+	public void NavigateToSubsription() throws InterruptedException
 	{
 		WebElement Subscription = driver.findElement(By.xpath(pr.getProperty("Subscription")));
 		Subscription.click();
+		Thread.sleep(3000);
 	}
 	public void NavigateToWatchLater() throws InterruptedException
 	{
