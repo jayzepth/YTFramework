@@ -7,13 +7,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class VideoPlayPage 
 {
-	ChromeDriver driver;
+	//ChromeDriver driver;
+	FirefoxDriver driver;
 	Properties pr;
-	public VideoPlayPage(ChromeDriver driver, Properties pr)
+	//public VideoPlayPage(ChromeDriver driver, Properties pr)
+	public VideoPlayPage(FirefoxDriver driver, Properties pr)
 	{
 		this.driver = driver;
 		this.pr = pr;

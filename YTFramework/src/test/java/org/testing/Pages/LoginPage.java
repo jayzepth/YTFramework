@@ -5,12 +5,15 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LoginPage 
 {
-	ChromeDriver driver;
+	//ChromeDriver driver;
+	FirefoxDriver driver;
 	Properties pr;
-	public LoginPage(ChromeDriver driver, Properties pr)
+	//public LoginPage(ChromeDriver driver, Properties pr)
+	public LoginPage(FirefoxDriver driver, Properties pr)
 	{
 		this.driver = driver;
 		this.pr = pr;

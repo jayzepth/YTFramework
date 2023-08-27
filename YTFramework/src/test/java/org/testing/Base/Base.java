@@ -6,12 +6,14 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class Base 
 {
-	public ChromeDriver driver;
+	//public ChromeDriver driver;
+	public FirefoxDriver driver;
 	public Properties pr;
 	@BeforeMethod
 	public void Browserlaunch() throws IOException
@@ -22,13 +24,14 @@ public class Base
 		pr.load(reader);
 		//System.out.println(pr.getProperty("SigninButton"));
 		
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.get("https://www.youtube.com/");
 		driver.manage().window().maximize();
 	}
-	@AfterMethod
-	public void BrowserClose()
-	{
-		driver.close();
-	}
+//	@AfterMethod
+//	public void BrowserClose()
+//	{
+//		driver.close();
+//	}
 }
