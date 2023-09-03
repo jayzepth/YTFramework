@@ -29,9 +29,9 @@ public class Base
 		driver.get("https://www.youtube.com/");
 		driver.manage().window().maximize();
 	}
-//	@AfterMethod
-//	public void BrowserClose()
-//	{
-//		driver.close();
-//	}
+	@AfterMethod
+	public void BrowserClose()
+	{
+		driver.close();
+	}
 }
