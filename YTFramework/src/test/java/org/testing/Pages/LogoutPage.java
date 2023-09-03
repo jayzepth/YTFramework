@@ -9,11 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LogoutPage 
 {
-	//ChromeDriver driver;
-	FirefoxDriver driver;
+	ChromeDriver driver;
+	//FirefoxDriver driver;
 	Properties pr;
-	//public LogoutPage(ChromeDriver driver, Properties pr)
-	public LogoutPage(FirefoxDriver driver, Properties pr)
+	public LogoutPage(ChromeDriver driver, Properties pr)
+	//public LogoutPage(FirefoxDriver driver, Properties pr)
 	{
 		this.driver = driver;
 		this.pr = pr;

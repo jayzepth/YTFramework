@@ -9,11 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HomePage 
 {
-	//ChromeDriver driver;
-	FirefoxDriver driver;
+	ChromeDriver driver;
+	//FirefoxDriver driver;
 	Properties pr;
-	//public HomePage(ChromeDriver driver, Properties pr)
-	public HomePage(FirefoxDriver driver, Properties pr)
+	public HomePage(ChromeDriver driver, Properties pr)
+	//public HomePage(FirefoxDriver driver, Properties pr)
 	{
 		this.driver = driver;
 		this.pr = pr;

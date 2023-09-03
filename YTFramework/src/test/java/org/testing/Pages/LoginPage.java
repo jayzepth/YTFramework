@@ -9,11 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LoginPage 
 {
-	//ChromeDriver driver;
-	FirefoxDriver driver;
+	ChromeDriver driver;
+	//FirefoxDriver driver;
 	Properties pr;
-	//public LoginPage(ChromeDriver driver, Properties pr)
-	public LoginPage(FirefoxDriver driver, Properties pr)
+	public LoginPage(ChromeDriver driver, Properties pr)
+	//public LoginPage(FirefoxDriver driver, Properties pr)
 	{
 		this.driver = driver;
 		this.pr = pr;
